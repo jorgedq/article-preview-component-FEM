@@ -13,51 +13,57 @@
     />
 
     <title>Frontend Mentor | Article preview component</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <div class="wraper">
-      <article class="article">
-        <img class="article-img" src="./images/drawers.jpg" alt="fondo" />
-        <div class="wraper-2">
-          <p class="article-title w-700">
-            Shift the overall look and feel by adding these wonderful touches to
-            furniture in your home
-          </p>
-          <p class="article-body w-500">
-            Ever been in a room and felt like something was missing? Perhaps it
-            felt slightly bare and uninviting. I’ve got some simple tips to help
-            you make any room feel complete.
-          </p>
-          <div class="article-user">
-            <div class="article-user-information">
-              <img src="./images/avatar-michelle.jpg" alt="avatar" />
-              <div class="article-user-personal">
-                <p class="article-user-name">Michelle Appleton</p>
-                <p class="article-user-date">28 Jun 2020</p>
-              </div>
+    <section class="card">
+      <img class="card__img" src="./images/drawers.jpg" alt="img" />
+      <div class="card__body wrapper">
+        <h2 class="card__body-title">
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h2>
+        <p class="card__body-description">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I've got some simple tips to help
+          you make any room fell complete.
+        </p>
+        <div class="person">
+          <div class="person__information">
+            <img
+              class="person__img"
+              src="./images/avatar-michelle.jpg"
+              alt="person-michelle"
+            />
+            <div class="person__data">
+              <p class="person__data-name">Michelle Appleton</p>
+              <p class="person__data-date">28 Jun 2020</p>
             </div>
-            <div class="article-user-btn-share"></div>
+          </div>
+          <div class="person__share">
+            <div class="share-list d-none">
+              <ul class="person__share-list">
+                <li class="person__share-list-item"><p>SHARE</p></li>
+                <li class="person__share-list-item">
+                  <img src="./images/icon-facebook.svg" alt="facebook" />
+                </li>
+                <li class="person__share-list-item">
+                  <img src="./images/icon-twitter.svg" alt="twitter" />
+                </li>
+                <li class="person__share-list-item">
+                  <img src="./images/icon-pinterest.svg" alt="pinterest" />
+                </li>
+              </ul>
+            </div>
+            <div class="person__share-img"></div>
           </div>
         </div>
-        <div class="share-component d-none">
-          <p>SHARE</p>
-          <img src="./images/icon-facebook.svg" alt="facebook" />
-          <img src="./images/icon-pinterest.svg" alt="pinterest" />
-          <img src="./images/icon-twitter.svg" alt="twitter" />
-        </div>
-      </article>
-    </div>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Jorge Miguel Delgadillo Quinteros</a>.
-    </div>
-    <script src="./app.js"></script>
+      </div>
+    </section>
+    <script src="./js/app.js"></script>
   </body>
 </html>
